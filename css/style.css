@@ -197,9 +197,10 @@ img {
 }
 
 .deposit-30-hero {
-  background: var(--dark-500);
-  position: relative;
-  z-index: 1;
+  background: url("../img/deposit-100.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .deposit-30-hero-gradient {
@@ -210,26 +211,6 @@ img {
   height: 100%;
   background: linear-gradient(209deg, rgba(13, 26, 61, 0.8575805322) 35%, rgba(19, 79, 128, 0.6783088235) 100%);
   z-index: 3;
-}
-
-.deposit-30-hero-video-container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.deposit-30-hero-video-container video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
-  z-index: 1;
 }
 
 .deposit-30-hero__header {
@@ -446,6 +427,11 @@ img {
 }
 
 @media (max-width: 991.98px) {
+  .deposit-30-hero {
+    background: url("../img/deposit-100-991.jpg") var(--dark-500);
+    padding-top: 500px;
+    background-position: top 0 center;
+  }
   .deposit-30-about {
     padding: 70px 0;
   }
@@ -464,6 +450,9 @@ img {
     background-image: url("../img/banner-bg-767.png");
     background-size: contain;
     background-size: 100% 50%;
+  }
+  .deposit-30-hero {
+    background-position: center top 0;
   }
   .deposit-30-benefits-wrapper {
     top: -80px;
@@ -515,9 +504,6 @@ img {
   }
   .deposit-30-type {
     padding: 0 0 70px;
-  }
-  .deposit-30-hero {
-    padding: 70px 0 150px;
   }
 }
 @media (max-width: 575.98px) {
@@ -575,11 +561,23 @@ img {
   .deposit-30-benefits__body-text {
     margin-inline: unset;
   }
+  .deposit-30-hero {
+    padding-top: 500px;
+    padding-bottom: 120px;
+  }
   .deposit-30-banner__header {
     margin-top: 60px;
   }
   .deposit-30-benefits-wrapper {
     top: -20px;
+  }
+  .deposit-30-hero {
+    background: url("../img/deposit-100-575.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top 0;
+    padding-top: 240px;
+    padding-bottom: 10px;
   }
   .light-blue {
     margin: 0;
@@ -592,7 +590,7 @@ img {
   .deposit-30-how__item-body::before {
     bottom: -30px;
   }
-  .deposit-30-slide.owl-carousel .owl-item img {
+  .deposit-30-slide.owl-carousel .owl-item {
     width: 50%;
     margin-inline: auto;
   }
