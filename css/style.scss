@@ -363,6 +363,15 @@ img {
     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.deposit-30-trade__link {
+    color: var(--dark-500);
+    @extend %base-transition;
+    &:hover  {
+        color: var(--blue-500);
+        text-decoration: none;
+    }
+}
+
 .deposit-30-trade__item:hover,
 .deposit-30-type__item:hover {
     transform: translateY(-10px);

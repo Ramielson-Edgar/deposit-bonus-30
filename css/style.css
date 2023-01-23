@@ -171,7 +171,7 @@ img {
   text-decoration: none;
 }
 
-.deposit-30-about__link svg, .btn-base {
+.deposit-30-about__link svg, .deposit-30-trade__link, .btn-base {
   transition: 0.3s ease-in;
 }
 
@@ -303,6 +303,14 @@ img {
 .deposit-30-type__item,
 .deposit-30-trade__item {
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.deposit-30-trade__link {
+  color: var(--dark-500);
+}
+.deposit-30-trade__link:hover {
+  color: var(--blue-500);
+  text-decoration: none;
 }
 
 .deposit-30-trade__item:hover,
