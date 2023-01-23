@@ -197,10 +197,28 @@ img {
 }
 
 .deposit-30-hero {
-  background: url("../img/deposit-100.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  position: relative;
+  padding: 150px 0;
+}
+
+.deposit-30-hero__video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.deposit-30-hero__video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .deposit-30-hero-gradient {
@@ -246,7 +264,7 @@ img {
   border-radius: 18px;
   max-width: 983px;
   margin-inline: auto;
-  z-index: 2;
+  z-index: 4;
 }
 
 .deposit-30-benefits__list {
@@ -427,11 +445,6 @@ img {
 }
 
 @media (max-width: 991.98px) {
-  .deposit-30-hero {
-    background: url("../img/deposit-100-991.jpg") var(--dark-500);
-    padding-top: 500px;
-    background-position: top 0 center;
-  }
   .deposit-30-about {
     padding: 70px 0;
   }
@@ -450,9 +463,6 @@ img {
     background-image: url("../img/banner-bg-767.png");
     background-size: contain;
     background-size: 100% 50%;
-  }
-  .deposit-30-hero {
-    background-position: center top 0;
   }
   .deposit-30-benefits-wrapper {
     top: -80px;
@@ -561,23 +571,11 @@ img {
   .deposit-30-benefits__body-text {
     margin-inline: unset;
   }
-  .deposit-30-hero {
-    padding-top: 500px;
-    padding-bottom: 120px;
-  }
   .deposit-30-banner__header {
     margin-top: 60px;
   }
   .deposit-30-benefits-wrapper {
-    top: -20px;
-  }
-  .deposit-30-hero {
-    background: url("../img/deposit-100-575.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top 0;
-    padding-top: 240px;
-    padding-bottom: 10px;
+    top: -50px;
   }
   .light-blue {
     margin: 0;
@@ -599,6 +597,9 @@ img {
   }
   .deposit-30-how__list {
     display: none;
+  }
+  .deposit-30-hero {
+    padding: 80px 0;
   }
 }
 @media (max-width: 375px) {

@@ -255,10 +255,28 @@ img {
 }
 
 .deposit-30-hero {
-    background: url('../img/deposit-100.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    position: relative;
+     padding: 150px 0;
+}
+
+.deposit-30-hero__video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.deposit-30-hero__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
 }
 
 .deposit-30-hero-gradient {
@@ -270,7 +288,6 @@ img {
     background: linear-gradient(209deg, rgba(13, 26, 61, 0.8575805322128851) 35%, rgba(19, 79, 128, 0.6783088235294117) 100%);
     z-index: 3;
 }
-
 
 
 .deposit-30-hero__header {
@@ -306,7 +323,7 @@ img {
     border-radius: 18px;
     max-width: 983px;
     margin-inline: auto;
-    z-index: 2;
+    z-index: 4;
 }
 
 .deposit-30-benefits__list {
@@ -338,8 +355,9 @@ img {
     border-radius: 17px;
     padding: 40px;
     z-index: 1;
- 
+
 }
+
 .deposit-30-type__item,
 .deposit-30-trade__item {
     transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -482,6 +500,7 @@ img {
 .deposit-30-banner__description {
     max-width: 484px;
 }
+
 .deposit-30-ready {
     padding: 150px 0;
 }
@@ -493,11 +512,11 @@ img {
 }
 
 @media (max-width: 991.98px) {
-    .deposit-30-hero {
-        background: url('../img/deposit-100-991.jpg') var(--dark-500);
-        padding-top: 500px;
-        background-position: top 0 center;
-    }
+    // .deposit-30-hero {
+    //     background: url('../img/deposit-100-991.jpg') var(--dark-500);
+    //     padding-top: 500px;
+    //     background-position: top 0 center;
+    // }
 
     .deposit-30-about {
         padding: 70px 0;
@@ -506,7 +525,7 @@ img {
     .deposit-30-ready {
         padding: 70px 0;
     }
-    
+
     .deposit-30-ready-img {
         position: unset;
         top: unset;
@@ -522,10 +541,10 @@ img {
         background-size: 100% 50%;
     }
 
-    .deposit-30-hero {
-        // background: url('../img/deposit-100-hero__bg-767.jpg');
-        background-position: center top 0 ;
-    }
+    // .deposit-30-hero {
+    //     // background: url('../img/deposit-100-hero__bg-767.jpg');
+    //     background-position: center top 0;
+    // }
 
     .deposit-30-benefits-wrapper {
         top: -80px;
@@ -592,7 +611,7 @@ img {
         padding: 0 0 70px;
     }
 
- 
+
 }
 
 @media (max-width: 575.98px) {
@@ -663,28 +682,13 @@ img {
         margin-inline: unset;
     }
 
-    .deposit-30-hero {
-        padding-top: 500px;
-        padding-bottom: 120px;
-    }
-
-
     .deposit-30-banner__header {
         margin-top: 60px;
     }
 
 
     .deposit-30-benefits-wrapper {
-        top: -20px;
-    }
-
-    .deposit-30-hero {
-        background: url('../img/deposit-100-575.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top 0;
-        padding-top: 240px;
-        padding-bottom: 10px;
+        top: -50px;
     }
 
 
@@ -702,7 +706,7 @@ img {
         bottom: -30px;
     }
 
-    .deposit-30-slide.owl-carousel .owl-item  {
+    .deposit-30-slide.owl-carousel .owl-item {
         width: 50%;
         margin-inline: auto;
     }
@@ -714,15 +718,19 @@ img {
     .deposit-30-how__list {
         display: none;
     }
- 
+
+
+    .deposit-30-hero {
+        padding: 80px 0;
+    }
 
 }
 
 @media (max-width:375px) {
- 
- 
+
+
     .deposit-30-hero__sub-title {
-        line-height:30px;
+        line-height: 30px;
         margin-bottom: 10px;
     }
 
